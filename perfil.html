@@ -1,0 +1,94 @@
+<!-- 3. HTML5 Semântico
+
+No perfil.html, utilize as seguintes tags para organizar o conteúdo:
+
+<header> — cabeçalho com seu nome, foto e, se quiser, slogan.
+<nav> — menu de navegação interna (âncoras para seções).
+<main> — envoltório do conteúdo principal.
+<section> — blocos temáticos, por exemplo:
+Sobre mim
+Habilidades
+Projetos
+Contato
+<article> — para “posts” ou depoimentos, se aplicável.
+<aside> — informações complementares (links, redes sociais).
+<footer> — rodapé com direitos autorais ou créditos. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Perfil</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Isaías Leal</h1>
+            <img src="imgs/profilepic.jpg" alt="Foto do Meu Perfil">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Sou de Minas Gerais, estudo engenharia de computação no CEFET-MG campus Timóteo e sou formado em técnico de Desenvolvimento de Sistemas também pelo CEFET. Atualmente estou no terceiro período e meus projetos são voltados para a área do desenvolvimento web</p>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Spring Boot</li>
+                    <li>Angular</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>WordPress</li>
+                </ul>
+            </section>
+
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <article>
+                    <h3>(WP) Landing Page</h3>
+                    <p>Landing page desenvolvida feelance em WordPress para uma loja de veículos</p>
+                    <img src="imgs/wordpress.png" alt="Landing Page WordPress">
+                </article>
+                <article>
+                    <h3>(PHP) Sistema de Controle de Veículos</h3>
+                    <p>Sistema web desenvolvido freelance em PHP para controle de estoque e automação de contratos</p>
+                    <img src="imgs/sistema.png" alt="PHP Sistema de Controle de Veículos">
+                </article>
+                <article>
+                    <h3>(ANGULAR+SPRING) Sistema Jurídico</h3>
+                    <p>Sistema web desenvolvido freelance em Angular, no front-end, e Spring Boot MVC, no back end, para controle de clientes e processos</p>
+                    <img src="imgs/angular.png" alt="Angular Sistema Jurídico">
+                </article>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:isaiascesar48@gmail.com">isaiascesar48@gmail.com</a></p>
+            </section>
+
+            <aside>
+                <h2>Links e Redes Sociais</h2>
+                <ul>
+                    <li><a href="instagram.com/isaiascsl">Instagram</a></li>
+                    <li><a href="github.com/zarikao">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/isa%C3%ADas-leal-9bb610262/">LinkedIn</a></li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2025 Isaías Leal. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
